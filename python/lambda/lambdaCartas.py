@@ -24,7 +24,7 @@ baraja = [Carta("Rojo", True, 10),
     
 rojas = filter (lambda carta:carta.color == "Rojo", baraja)
 
-noFiguras = filter (lambda carta:carta.pinta == False, baraja)
+noFiguras = filter (lambda carta:carta.pinta == False, rojas)
 
 valores = map(lambda valor:valor.valor, noFiguras)
 
